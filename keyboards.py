@@ -1,4 +1,6 @@
-"""Inline Keyboard Builders"""
+"""
+Inline Keyboard Builders
+"""
 from typing import List, Dict
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import Config, Emoji
@@ -182,7 +184,7 @@ class Keyboards:
         ])
     
     @staticmethod
-    def back_button(callback_data: str, text: str = "Back") -> InlineKeyboardMarkup:
+    def back_button(callback_data: str, text: str) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text=f"{Emoji.BACK} {text}", callback_data=callback_data)]
         ])
@@ -191,7 +193,9 @@ class Keyboards:
     def cancel_button() -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text=f"{Emoji.CROSS} Cancel", callback_data="cancel")]
-        ])"""Inline Keyboard Builders"""
+        ])"""
+Inline Keyboard Builders
+"""
 from typing import List, Dict
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import Config, Emoji
@@ -375,7 +379,7 @@ class Keyboards:
         ])
     
     @staticmethod
-    def back_button(callback_data: str, text: str = "Back") -> InlineKeyboardMarkup:
+    def back_button(callback_data: str, text: str) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text=f"{Emoji.BACK} {text}", callback_data=callback_data)]
         ])
